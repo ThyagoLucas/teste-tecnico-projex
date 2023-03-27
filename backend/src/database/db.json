@@ -1,0 +1,11 @@
+{
+  "users": [
+    {
+      "id": "c0beaa79-2e8b-4cef-a042-5ec295afceaa",
+      "name": "teste user",
+      "email": "test@gmail.com",
+      "password": "$2b$10$OBSIYXV/7k32WARZ0nJJd.rNa.nceqPT7PweMhN8sVKpNJHNh3W7y",
+      "createdAt": "27/03/2023 - 09:20:26"
+    }
+  ]
+}
