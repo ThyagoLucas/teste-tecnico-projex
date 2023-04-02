@@ -1,1 +1,38 @@
-<p>sign-in works!</p>
+<nb-card>
+
+  <nb-card-header>Login<span class="span">Olá! Faça o login com o seu email</span></nb-card-header>
+  <nb-card-body>
+
+    <form [formGroup]="formulario" (ngSubmit)="onSubmit()">
+
+      <nb-form-field>
+        <label>Email</label>
+        <input type="email" formControlName="email" nbInput fullWidth placeholder="Email">
+
+        <div *ngIf="formulario.get('email')!.invalid && (formulario.get('email')!.dirty || formulario.get('email')!.touched)">
+          <div *ngIf="formulario.get('email')?.hasError('required')" class="text-danger" >Campo obrigatório.</div>
+          <div *ngIf="formulario.get('email')?.hasError('email')" class="text-danger">E-mail inválido.</div>
+        </div>
+
+      </nb-form-field>
+
+      <nb-form-field>
+        <label>Password</label>
+        <input type="password" nbInput formControlName="password" placeholder="Password">
+
+        <div *ngIf="formulario.get('password')!.invalid && (formulario.get('password')!.dirty || formulario.get('password')!.touched)">
+          <div *ngIf="formulario.get('password')?.hasError('required')" class="text-danger" >Campo obrigatório.</div>
+          <div *ngIf="formulario.get('password')?.hasError('minlength')" class="text-danger" >minimo de 6 caracters</div>
+        </div>
+      </nb-form-field>
+
+      <button nbButton hero status="primary" [disabled]="enablesendButton()">Logar</button>
+
+    </form>
+
+    <section>Ainda não tem cadastro? <span (click)="goToRegister()">Registre-se!</span></section>
+
+  </nb-card-body>
+
+</nb-card>
+

@@ -5,16 +5,19 @@ import { LoginPageRoutingModule } from './login-page-routing.module';
 import { SignInModule } from 'src/app/features/auth/components/sign-in/sign-in.module';
 import { NebularModulesModule } from 'src/app/shareds/nebular-modules/nebular-modules.module';
 import { LayoutModule } from 'src/app/shareds/layout/layout.module';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
-  declarations: [ LoginPageComponent],
+  declarations: [LoginPageComponent],
   imports: [
     CommonModule,
     LoginPageRoutingModule,
 		SignInModule,
     NebularModulesModule,
-    LayoutModule
+    LayoutModule,
+    SignInModule,
+    FormsModule,
 
   ]
 })

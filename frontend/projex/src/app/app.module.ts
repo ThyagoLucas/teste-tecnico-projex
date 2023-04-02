@@ -13,7 +13,7 @@ import { TokenInterceptor } from './features/auth/interceptors/token.interceptor
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NbThemeModule.forRoot({name:'corporate'}),
+    NbThemeModule.forRoot(),
 
 
   ],
