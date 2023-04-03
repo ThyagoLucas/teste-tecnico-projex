@@ -1,9 +1,17 @@
 import * as uService from '../services/authService.js'
+
 export async function register( req, res ){
 
-    const { name, email, password } = req.body;
+    const {file, name, email, password } = req.body;
 
-    const create = await uService.create(name, email,password)
+    const files = req.file
 
-    res.send('created').status(201);
+    const create = await uService.create(name, email, password)
+
+   
+     
+      res.send(JSON.stringify({data: 'sucess'}));
+
+   
+
 }

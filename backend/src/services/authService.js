@@ -1,6 +1,6 @@
 import dayjs from 'dayjs';
 import { getConnection } from '../database/database.js'
-import bcrypt from 'bcrypt';
+import * as bcrypt from 'bcrypt';
 import { v4 as uuidv4 } from 'uuid';
 
 const db = getConnection();
@@ -8,15 +8,19 @@ const db = getConnection();
 export async function create( name, email, password ){
 
     await checkEmailAlreadyRegistered(email)
-  
+    
+    const hash = bcrypt.hashSync(password, 10);
+
+    console.log(hash)
     const user = {
         id: uuidv4(),
         name:name,
         email:email,
-        password: bcrypt.hashSync(password, 10),
+        password: hash,
         createdAt: dayjs().format('DD/MM/YYYY - HH:mm:ss')
 
     }
+
     await db.data.users.push(user)
     await db.write();
     
