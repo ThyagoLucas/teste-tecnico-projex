@@ -9,7 +9,7 @@ import { NbGlobalPhysicalPosition, NbToastrService } from '@nebular/theme';
   templateUrl: './sign-up.component.html',
   styleUrls: ['./sign-up.component.css']
 })
-export class SignUpComponent {
+export class SignUpComponent implements OnInit {
 
   userForm: FormGroup;
   file: File = new File([new Blob()], 'temp.txt');
@@ -59,6 +59,14 @@ export class SignUpComponent {
 
   goToLogin():void{
     this.router.navigate(['auth/sign-in'])
+  }
+
+  ngOnInit(){
+    const token = localStorage.getItem('token');
+
+    if(token){
+      this.router.navigate([''])
+    }
   }
 
 }
