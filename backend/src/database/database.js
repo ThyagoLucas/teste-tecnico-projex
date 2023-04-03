@@ -15,7 +15,7 @@ async function createConnection(){
    
     await db.read()    
 
-    db.data ||= { users:[]}
+    db.data ||= { users:[], sessions:[]};
 
     await db.write()
 

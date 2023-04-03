@@ -1,5 +1,54 @@
 {
   "users": [
-   
+    {
+      "id": "f5c58245-fc2a-48c5-b5aa-2f40e7b3a739",
+      "name": "thyago",
+      "email": "thyago@gmail.com",
+      "password": "$2b$10$jAQIPXldv.NXdD9kVoQudeaJ3M.JNE9y4vU0HlYc8UVb7MWC2jbci",
+      "createdAt": "02/04/2023 - 23:38:03"
+    },
+    {
+      "id": "cebf039d-303c-42a9-a8b2-7c461bf91052",
+      "name": "thyago",
+      "email": "thyago1@gmail.com",
+      "password": "$2b$10$R2XKJHTjtit6GKCt3I858.HYYV68dYTlf7yp3V18cytFSTZoGH6.6",
+      "createdAt": "02/04/2023 - 23:48:10"
+    },
+    {
+      "id": "3529d708-cd95-4296-ab66-45752d9f9795",
+      "name": "thyago",
+      "email": "thyago2@gmail.com",
+      "password": "$2b$10$.Gp8CRpoQJiRfOj1MCq8LOi6s23z6KKhgOqkEZgj3UvKkrMBoROK6",
+      "createdAt": "03/04/2023 - 07:56:47"
+    },
+    {
+      "id": "873746b2-3649-4165-b951-19d9f4813678",
+      "name": "thyago",
+      "email": "thyago3@gmail.com",
+      "password": "$2b$10$tbTKqKHbZD6JNN6ew.Ap5uSqfTuJBW8Q1apdkl4CdGaluA84uPWAm",
+      "createdAt": "03/04/2023 - 07:56:52"
+    }
+  ],
+  "sessions": [
+    {
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJmNWM1ODI0NS1mYzJhLTQ4YzUtYjVhYS0yZjQwZTdiM2E3MzkiLCJpYXQiOjE2ODA0OTMxMTYsImV4cCI6MTY4MDU3OTUxNn0.BTeqWkRz4tSPS09TV43Tch6ehTnC1fzIx73OKLARpIg",
+      "valid": true,
+      "createdAt": "02/04/2023 - 23:38:36"
+    },
+    {
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIzNTI5ZDcwOC1jZDk1LTQyOTYtYWI2Ni00NTc1MmQ5Zjk3OTUiLCJpYXQiOjE2ODA1MjMwNzEsImV4cCI6MTY4MDYwOTQ3MX0.KqUlZjFZ8qv6Dm1nQPBrkLP7PqwngQqS9j7MeJMenEs",
+      "valid": true,
+      "createdAt": "03/04/2023 - 07:57:51"
+    },
+    {
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIzNTI5ZDcwOC1jZDk1LTQyOTYtYWI2Ni00NTc1MmQ5Zjk3OTUiLCJpYXQiOjE2ODA1MjMxOTEsImV4cCI6MTY4MDYwOTU5MX0.vWACzc0yY0x-JsvhiDAtRGRg-QouDtXWREcG1xQV-Qw",
+      "valid": true,
+      "createdAt": "03/04/2023 - 07:59:51"
+    },
+    {
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiIzNTI5ZDcwOC1jZDk1LTQyOTYtYWI2Ni00NTc1MmQ5Zjk3OTUiLCJpYXQiOjE2ODA1MjMzNjAsImV4cCI6MTY4MDYwOTc2MH0.iZabtdyO27oeg3iUeBB8DMXmqXOnMDt_RVX90FvD4cg",
+      "valid": true,
+      "createdAt": "03/04/2023 - 08:02:40"
+    }
   ]
 }
