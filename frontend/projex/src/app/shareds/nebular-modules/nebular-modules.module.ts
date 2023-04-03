@@ -1,7 +1,8 @@
-import { NbButtonModule, NbCardModule, NbFormFieldModule, NbIconModule, NbInputModule, NbLayoutModule } from '@nebular/theme';
+import { NbButtonModule, NbCardModule, NbFormFieldModule, NbIconModule, NbInputModule, NbLayoutModule, NbToastrModule } from '@nebular/theme';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ReactiveFormsModule } from '@angular/forms';
+
 
 
 
@@ -9,9 +10,8 @@ import { ReactiveFormsModule } from '@angular/forms';
   declarations: [],
   imports: [
     CommonModule,
-    NbCardModule,
-    NbLayoutModule,
-    NbInputModule
+    NbToastrModule.forRoot({})
+
 
   ],
   exports:[
@@ -21,7 +21,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     NbInputModule,
     NbIconModule,
     NbFormFieldModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
 
 
 

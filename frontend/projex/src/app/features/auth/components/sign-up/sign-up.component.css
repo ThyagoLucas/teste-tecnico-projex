@@ -1,0 +1,51 @@
+
+nb-card-body{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+nb-card{
+  width: 50%;
+  margin-left: 25%;
+}
+nb-card-header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: xx-large;
+}
+
+.span{
+  font-style: normal;
+  font-size: medium;
+  margin-top: 5px;
+}
+
+
+
+nb-form-field{
+  width: 100%;
+  margin-top: 20px;
+}
+
+section{
+  margin-top: 35px;
+
+}
+
+section span:hover{
+  cursor: grab;
+
+}
+
+section span{
+  color: blue;
+}
+
+
+button{
+  width: 100%;
+  margin-top: 20px;
+}

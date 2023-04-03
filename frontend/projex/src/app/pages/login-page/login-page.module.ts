@@ -1,3 +1,4 @@
+import { SignUpModule } from './../../features/auth/components/sign-up/sign-up.module';
 import { LoginPageComponent } from './login-page.component';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -14,6 +15,7 @@ import { FormsModule } from '@angular/forms';
     CommonModule,
     LoginPageRoutingModule,
 		SignInModule,
+    SignUpModule,
     NebularModulesModule,
     LayoutModule,
     SignInModule,

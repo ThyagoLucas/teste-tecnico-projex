@@ -38,4 +38,5 @@ export class SignInComponent {
   goToRegister():void{
     this.router.navigate(['auth/sign-up'])
   }
+
 }
