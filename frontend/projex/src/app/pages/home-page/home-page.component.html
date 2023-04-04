@@ -1,1 +1,16 @@
-<h1> home</h1>
+<nb-layout>
+  <nb-layout-header fixed>
+    <button nbButton status="basic" (click)="toggleSidebar()">
+      <nb-icon [icon]="isSidebarCollapsed ? rightArrowIcon : leftArrowIcon"></nb-icon>
+    </button>
+    <span>Desafio Projex</span>
+  </nb-layout-header>
+  <nb-sidebar  tag="menu-sidebar" [collapsedBreakpoints]="['xs', 'is']">
+
+    <nb-menu [items]="menuItems"></nb-menu>
+  </nb-sidebar>
+
+  <nb-layout-column>
+    <router-outlet></router-outlet>
+  </nb-layout-column>
+</nb-layout>

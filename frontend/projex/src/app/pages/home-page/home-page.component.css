@@ -1,0 +1,13 @@
+.collapsed {
+  width: 64px !important;
+  overflow: hidden;
+  transition: width 0.3s ease-in-out;
+}
+
+.collapsed nb-menu-item {
+  justify-content: center;
+}
+
+.collapsed nb-menu-icon {
+  margin-right: 0;
+}
